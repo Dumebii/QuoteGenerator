@@ -3,6 +3,8 @@ import "../styles.css";
 import quotes from "../quotes";
 import Quotes from "./Quotes";
 import Button from "./Button";
+import Heading from "./Heading";
+import Footer from "./Footer";
 
 export default function App() {
   const [value, setValue] = React.useState(0);
@@ -14,8 +16,10 @@ export default function App() {
 
   return (
     <div className="App">
+    <Heading />
       <Quotes quote={quotes[value].quote} author={quotes[value].author} />
       <Button onClick={updateQuote} />
+        <Footer />
     </div>
   );
 }
