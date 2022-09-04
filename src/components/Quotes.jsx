@@ -4,8 +4,11 @@ import Button from "./Button";
 function Quotes(props) {
   return (
     <div>
-      <h3>{props.quote}</h3>
-      <p>{props.author}</p>
+      <blockquote>
+        {props.quote}
+        <br />
+        <cite>{props.author}</cite>
+      </blockquote>
     </div>
   );
 }
